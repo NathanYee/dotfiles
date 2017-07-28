@@ -17,7 +17,7 @@ set $mod Mod4
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:DejaVu Sans Mono 11
+font pango:DejaVu Sans Mono 15
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -206,14 +206,19 @@ bindsym XF86MonBrightnessDown exec light -U 5 # decrease screen brightness
 
 bindsym $mod+x exec i3lock --color "$bg-color"
 
+# Programs and services
 exec rhythmbox
 exec compton
+exec redshift
+# background
 exec feh --bg-scale ~/Pictures/wallpapers/lightning.jpg
 
-#bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -width 100 -padding 450 -opacity "85" -bw 0 -font "DejaVu Sans Mono 18" -color-window "#2f343f, #000000, #2f343f"  
 bindsym $mod+d exec rofi -show run -config /home/nathan/.config/i3/rofi.config
 
 assign [class="Rhythmbox"] $workspace10
 
 gaps inner 15
 gaps outer 5
+
+
+
