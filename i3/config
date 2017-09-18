@@ -161,7 +161,7 @@ bindsym $mod+F8 workspace $workspaceF8
 bindsym $mod+F9 workspace $workspaceF9
 bindsym $mod+F10 workspace $workspaceF10
 bindsym $mod+F11 workspace $workspaceF11
-bindsym $mod+F11 workspace $workspaceF11
+bindsym $mod+F12 workspace $workspaceF12
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -248,7 +248,7 @@ exec redshift
 exec wicd-gtk
 
 # background
-exec_always feh --bg-scale ~/Pictures/wallpapers/fluffer.jpg
+exec_always feh --bg-fill ~/Pictures/wallpapers/sf.jpg
 
 # Monitor
 # exec xrandr --output eDP-1-1 --mode 1920x1080 --pos 0x1080 --rotate normal --output DP-1-1 --off --output HDMI-1-1 --mode 3840x2160 --pos 1920x0 --rotate normal --output HDMI-1-2 --off
