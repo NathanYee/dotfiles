@@ -1,0 +1,9 @@
+sudo apt install -y help2man
+
+cd ~/git
+rm -rf light
+git clone https://github.com/haikarainen/light.git light && cd light
+sudo make
+sudo make install
+
+sudo apt install -y i3lock i3blocks rofi feh

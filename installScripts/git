@@ -1,0 +1,3 @@
+# I can't apt install git here because I'm doing this from a cloned repo
+git config --global user.name "nathanyee"
+git config --global user.email "nathaniel.yee@students.olin.edu"
