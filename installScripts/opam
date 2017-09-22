@@ -1,0 +1,3 @@
+add-apt-repository -y ppa:avsm/ppa
+apt-get update -y 
+apt-get install -y ocaml ocaml-native-compilers camlp4-extra opam
