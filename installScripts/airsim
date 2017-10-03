@@ -1,0 +1,6 @@
+# go to folder where you clone GitHub projects
+cd ~/git
+git clone https://github.com/Microsoft/AirSim.git
+cd AirSim
+./setup.sh
+./build.sh
