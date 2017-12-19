@@ -1,1 +1,2 @@
-sudo apt install -y lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings wicd compton xorg xserver-xorg nautilus gnome-terminal software-properties-common redshift
+sudo apt install -y lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings wicd compton xorg xserver-xorg nautilus gnome-terminal software-properties-common autoconf lxappearance pavucontrol
+sudo apt install -y wget unzip redshift 
