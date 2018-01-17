@@ -1,0 +1,8 @@
+tar -xf ~/Downloads/pia-v75-installer-linux.tar.gz
+bash ~/Downloads/pia-v75-installer-linux.sh
+
+sudo mkdir /opt/
+sudo rm -rf /opt/pia_manager
+sudo mv ~/.pia_manager /opt/pia_manager
+ln -s /opt/pia_manager ~/.pia_manager
+sudo rm /tmp/pia*
