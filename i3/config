@@ -228,10 +228,12 @@ bar {
 }
 
 
-# Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 1 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 1 -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 1 toggle # mute sound
+# Pulse Audio controls - volume
+#bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 1 +5% #increase sound volume
+#bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 1 -5% #decrease sound volume
+bindsym XF86AudioRaiseVolume exec --no-startup-id bash ~/.config/i3/volume/volume_up
+bindsym XF86AudioLowerVolume exec --no-startup-id bash ~/.config/i3/volume/volume_down
+bindsym XF86AudioMute exec --no-startup-id bash ~/.config/i3/volume/volume_down
 
 # Sreen brightness controls
 #bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
@@ -240,7 +242,7 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 1 toggle # mute s
 bindsym XF86MonBrightnessUp   exec light -A 10 # increase screen brightness
 bindsym XF86MonBrightnessDown exec light -U 5 # decrease screen brightness
 
-bindsym $mod+x exec i3lock --color "$bg-color"
+bindsym $mod+x exec i3lock --color "$bg-color" && systemctl suspend
 
 # Programs and services
 exec compton
@@ -257,8 +259,8 @@ bindsym $mod+d exec rofi -show run -config ~/.config/i3/rofi.config
 
 assign [class="Rhythmbox"] $workspace10
 
-gaps inner 15
-gaps outer 5
+gaps inner 5
+gaps outer 0
 smart_gaps on
 
 
