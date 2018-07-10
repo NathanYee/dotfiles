@@ -3,3 +3,9 @@ git config --global user.name "nathanyee"
 git config --global user.email "nathaniel.yee@students.olin.edu"
 git config --global push.default simple
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+git config --global diff.tool meld
+git config --global --add mergetool.prompt false
+
+git config --global merge.tool meld
+git config --global --add difftool.prompt false
