@@ -1,5 +1,5 @@
 tar -xf ~/Downloads/pia-v81-installer-linux.tar.gz
-bash ~/Downloads/pia-v81-installer-linux.sh
+bash pia-v81-installer-linux.sh
 
 sudo mkdir /opt/
 sudo rm -rf /opt/pia_manager
