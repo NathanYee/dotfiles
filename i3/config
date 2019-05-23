@@ -243,11 +243,12 @@ bindsym XF86MonBrightnessUp   exec light -A 10 # increase screen brightness
 bindsym XF86MonBrightnessDown exec light -U 5 # decrease screen brightness
 
 bindsym $mod+x exec i3lock --color "$bg-color" && systemctl suspend
+bindsym $mod+shift+x exec i3lock --color "$bg-color"
 
 # Programs and services
 exec compton
 exec redshift
-exec wicd-gtk
+exec nm-applet
 
 # background
 exec_always feh --bg-fill ~/Pictures/wallpapers/lightning.jpg
