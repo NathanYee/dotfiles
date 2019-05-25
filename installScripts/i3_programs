@@ -16,3 +16,6 @@ cd light
 ./autogen.sh
 ./configure && make
 sudo make install
+
+# other programs
+sudo apt install -y i3blocks rofi i3lock
