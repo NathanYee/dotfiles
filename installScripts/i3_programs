@@ -1,9 +1,21 @@
-sudo apt install -y help2man
-
-cd ~/git
-rm -rf light
-git clone https://github.com/haikarainen/light.git light && cd light
-sudo make
+./configure && make
 sudo make install
 
-sudo apt install -y i3lock i3blocks rofi feh
+# light
+cd ~/git
+rm -rf light
+mkdir lightTemp
+cd lightTemp
+wget https://github.com/haikarainen/light/tarball/master -O light.tar.gz
+tar xf light.tar.gz
+rm light.tar.gz
+mv * ../light
+cd ..
+rm -r lightTemp
+cd light
+./autogen.sh
+./configure && make
+sudo make install
+
+# other programs
+sudo apt install -y i3blocks rofi i3lock arandr feh
