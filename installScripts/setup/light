@@ -1,3 +1,5 @@
+#! /bin/bash
+
 # light
 cd ~/git
 rm -rf light
