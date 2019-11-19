@@ -1,0 +1,15 @@
+#! /bin/bash
+
+./git
+./tmux
+
+./initial
+
+./i3_gaps
+./i3_programs
+
+./arc
+./paper
+
+./neovim
+./music

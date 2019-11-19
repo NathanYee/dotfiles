@@ -1,5 +1,7 @@
 #! /bin/bash
 
+sudo apt install -y i3blocks rofi i3lock arandr feh
+
 # light
 cd ~/git
 rm -rf light
