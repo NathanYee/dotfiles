@@ -1,6 +1,3 @@
-./configure && make
-sudo make install
-
 # light
 cd ~/git
 rm -rf light
