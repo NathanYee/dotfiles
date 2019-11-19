@@ -1,3 +1,5 @@
-rsync -av ~/.config/i3/ desktopi3/
-rsync -av ~/.tmux.conf .
-rsync -av ~/.config/nvim nvim
+#! /bin/bash
+rsync -av ~/.config/i3/ desktop/.config/i3/
+rsync -av ~/.tmux.conf desktop/
+rsync -av ~/.config/nvim desktop/nvim
+rsync -av ~/.config/fish desktop/fish
