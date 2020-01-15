@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # add daily builds PPA
-sudo add-apt-repository -y ppa:snwh/pulp
+sudo add-apt-repository -y ppa:snwh/ppa
 # update repository info
 sudo apt-get update
 # install icon theme
