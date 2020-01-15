@@ -9,7 +9,7 @@
 ./i3_programs
 
 ./arc
-./paper
+#./paper
 
 ./neovim
 ./music
