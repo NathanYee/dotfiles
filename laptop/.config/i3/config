@@ -222,10 +222,9 @@ exec nm-applet
 
 # background
 exec_always feh --bg-fill ~/Pictures/wallpapers/lightning.jpg
-exec bash /home/nathan/.screenlayout/cambrio.sh
+exec_always bash /home/nathan/.screenlayout/cambrio.sh
 
 # Monitor
-# exec xrandr --output eDP-1-1 --mode 1920x1080 --pos 0x1080 --rotate normal --output DP-1-1 --off --output HDMI-1-1 --mode 3840x2160 --pos 1920x0 --rotate normal --output HDMI-1-2 --off
 
 bindsym $mod+d exec rofi -show run -config ~/.config/i3/rofi.config
 

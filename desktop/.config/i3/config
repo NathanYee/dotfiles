@@ -259,8 +259,6 @@ exec_always feh --bg-fill ~/Documents/discipline.png
 
 bindsym $mod+d exec rofi -show run -config ~/.config/i3/rofi.config
 
-assign [class="Rhythmbox"] $workspace10
-
 gaps inner 15
 gaps outer 0
 smart_gaps on
