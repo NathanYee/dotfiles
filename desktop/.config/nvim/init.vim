@@ -1,4 +1,6 @@
 filetype plugin indent on
+set nu
+set cmdheight=2
 
 " Specify a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
@@ -6,6 +8,8 @@ filetype plugin indent on
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+Plug 'tpope/vim-sensible'
 
 Plug 'morhetz/gruvbox'
 
@@ -15,12 +19,22 @@ call plug#end()
 let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-pairs',
-  \ 'coc-tsserver',
   \ 'coc-python',
   \ 'coc-eslint', 
   \ 'coc-prettier', 
   \ 'coc-json', 
   \ ]
+
+" Use K to show documentation in preview window
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction
 
 
 colorscheme gruvbox
