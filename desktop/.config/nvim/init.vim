@@ -1,6 +1,16 @@
 filetype plugin indent on
-set nu
+
+set number relativenumber
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
+
+
+
 set cmdheight=2
+set foldmethod=indent
 
 " Specify a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
@@ -18,7 +28,6 @@ call plug#end()
 " coc config
 let g:coc_global_extensions = [
   \ 'coc-snippets',
-  \ 'coc-pairs',
   \ 'coc-python',
   \ 'coc-tabnine',
   \ ]
