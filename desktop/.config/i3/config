@@ -223,8 +223,8 @@ bindsym XF86AudioMute exec --no-startup-id bash ~/.config/i3/volume/volume_mute
 bindsym XF86MonBrightnessUp   exec light -A 10 # increase screen brightness
 bindsym XF86MonBrightnessDown exec light -U 5 # decrease screen brightness
 
-bindsym $mod+x exec i3lock --color "$bg" && systemctl suspend
-bindsym $mod+shift+x exec i3lock --color "$bg"
+bindsym $mod+x exec i3lock --color 282828 && systemctl suspend
+bindsym $mod+shift+x exec i3lock --color 282828 
 
 # Programs and services
 exec compton
@@ -237,6 +237,9 @@ exec_always feh --bg-fill ~/Documents/discipline.png
 
 # Monitor
 exec_always bash /home/nathan/.screenlayout/4k4k2kl.sh
+
+# Mouse
+exec_always imwheel -b "4 5" -k
 
 # Rofi
 bindsym $mod+d exec rofi -show run -config ~/.config/i3/rofi.config
