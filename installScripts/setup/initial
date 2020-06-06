@@ -6,4 +6,4 @@ sudo apt install -y software-properties-common autoconf
 
 sudo apt install -y nautilus gnome-terminal network-manager-gnome
 
-sudo apt install -y wget unzip redshift renameutils htop curl ncdu okular evince pavucontrol lxappearance neovim
+sudo apt install -y wget unzip redshift renameutils htop curl ncdu okular evince pavucontrol lxappearance neovim pulseaudio alsa-base
