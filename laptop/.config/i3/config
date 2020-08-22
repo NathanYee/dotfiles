@@ -233,7 +233,7 @@ exec nm-applet
 
 # background
 exec_always feh --bg-fill ~/Pictures/wallpapers/lightning.jpg
-exec_always bash /home/nathan/.screenlayout/cambrio.sh
+exec_always bash /home/nathan/.screenlayout/layout.sh
 
 # Monitor
 
