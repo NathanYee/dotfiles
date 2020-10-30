@@ -7,7 +7,7 @@ augroup numbertoggle
   autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END
 
-set cmdheight=2
+" set cmdheight=2
 set foldmethod=indent
 set tabstop=4
 set shiftwidth=4
