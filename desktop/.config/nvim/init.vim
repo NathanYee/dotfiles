@@ -35,7 +35,6 @@ let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-python',
   \ 'coc-rust-analyzer', 
-  \ 'coc-tabnine', 
   \ ]
 
 " Use K to show documentation in preview window
@@ -49,8 +48,19 @@ let g:coc_global_extensions = [
 "   endif
 " endfunction
 
-
+set termguicolors
+let g:gruvbox_italic=1
 colorscheme gruvbox
+let g:go_highlight_extra_types = 0
+let g:go_highlight_functions = 1
+let g:go_highlight_function_parameters = 1
+let g:go_highlight_function_calls = 1
+let g:go_highlight_fields = 1
+
+
+
+
+
 
 " rust config
 let g:rustfmt_autosave = 1
