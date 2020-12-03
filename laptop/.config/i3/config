@@ -227,19 +227,19 @@ bindsym $mod+x exec i3lock --color "$bg" && systemctl suspend
 bindsym $mod+shift+x exec i3lock --color "$bg"
 
 # Programs and services
-exec compton
-exec redshift
+exec picom --backend glx --no-use-damage --vsync -b
+# exec redshift
 exec nm-applet
 
 # background
 exec_always feh --bg-fill ~/Pictures/wallpapers/lightning.jpg
-exec_always bash /home/nathan/.screenlayout/layout.sh
+# exec_always bash /home/nathan/.screenlayout/layout.sh
 
 # Monitor
 
 bindsym $mod+d exec rofi -show run -config ~/.config/i3/rofi.config
 
-gaps inner 15
+gaps inner 0
 gaps outer 0
 smart_gaps on
 
