@@ -1,6 +1,8 @@
 #! /bin/bash
 
-sudo apt install -y gcc make
+sudo apt update
+
+sudo apt install -y gcc make cmake
 
 sudo apt install -y lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings compton xorg xserver-xorg
 
@@ -8,4 +10,6 @@ sudo apt install -y software-properties-common autoconf
 
 sudo apt install -y nautilus gnome-terminal network-manager-gnome
 
-sudo apt install -y wget unzip redshift renameutils htop curl ncdu okular evince pavucontrol lxappearance neovim pulseaudio alsa-base
+sudo apt install -y wget unzip redshift renameutils htop curl ncdu okular evince pavucontrol lxappearance neovim pulseaudio alsa-base direnv meson ninja-build
+
+sudo apt dist-upgrade -y

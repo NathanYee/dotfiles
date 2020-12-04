@@ -4,5 +4,3 @@ sudo apt install -y tmux
 
 cd ~/git
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-cd ~/.
-cp git/dotfiles/.tmux.conf .
