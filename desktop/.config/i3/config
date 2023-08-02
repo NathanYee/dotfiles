@@ -233,26 +233,18 @@ bindsym $mod+x exec i3lock --color 282828 && systemctl suspend
 bindsym $mod+shift+x exec i3lock --color 282828 
 
 # Programs and services
-exec compton
-exec redshift
-exec nm-applet
 
 # Background
 # exec_always feh --bg-fill ~/Pictures/wallpapers/lightning.jpg
-exec_always feh --bg-fill ~/Documents/discipline.png
 
 # Monitor
-exec_always bash /home/nathan/.screenlayout/4k4k2kl.sh
+exec_always bash /home/nathan/.screenlayout/4k4k.sh
 
 # Mouse
 exec_always imwheel -b "4 5" -k
 
 # Rofi
-bindsym $mod+d exec rofi -show run -config ~/.config/i3/rofi.config
-
-gaps inner 15
-gaps outer 0
-smart_gaps on
+bindsym $mod+d exec rofi -show run
 
 #######
 #THEME#
