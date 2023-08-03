@@ -2,7 +2,7 @@ sudo apt-get install -y \
     gcc make cmake ninja-build \
     software-properties-common autoconf \
     nautilus gnome-terminal network-manager \
-    tmux htop neovim \
+    tmux htop neovim fish \
     wget curl unzip rsync renameutils ncdu gpg apt-transport-https \
     okular calibre qbittorrent \
     pulseaudio pavucontrol alsa-base \
