@@ -9,9 +9,18 @@ rm -f packages.microsoft.gpg
 sudo apt-get update
 sudo apt-get install -y code
 
-code --install-extension ms-python.python --force
-code --install-extension vscodevim.vim --force
-code --install-extension njpwerner.autodocstring --force
-code --install-extension rust-lang.rust-analyzer --force
-code --install-extension polypus74.trusty-rusty-snippets --force
+code --install-extension asvetliakov.vscode-neovim --force
 code --install-extension jdinhlife.gruvbox --force
+code --install-extension ms-python.python --force
+code --install-extension njpwerner.autodocstring --force
+code --install-extension phoenixframework.phoenix --force
+code --install-extension pixl.bevy-snippets --force
+code --install-extension polypus74.trusty-rusty-snippets --force
+code --install-extension rust-lang.rust-analyzer --force
+code --install-extension samuel-pordeus.elixir-test --force
+code --install-extension streetsidesoftware.code-spell-checker --force
+code --install-extension wmaurer.change-case --force
+#code --install-extension  --force
+#code --install-extension  --force
+#code --install-extension  --force
+#code --install-extension  --force
