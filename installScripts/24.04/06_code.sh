@@ -12,6 +12,8 @@ sudo apt-get install -y code
 code --install-extension jdinhlife.gruvbox --force
 code --install-extension ms-python.python --force
 code --install-extension njpwerner.autodocstring --force
+code --install-extension vscodevim.vim --force
+code --install-extension Catppuccin.catppuccin-vsc-pack --force
 #code --install-extension phoenixframework.phoenix --force
 code --install-extension pixl.bevy-snippets --force
 #code --install-extension polypus74.trusty-rusty-snippets --force
@@ -21,5 +23,12 @@ code --install-extension rust-lang.rust-analyzer --force
 code --install-extension wmaurer.change-case --force
 code --install-extension ms-vscode-remote.remote-containers --force
 code --install-extension ms-azuretools.vscode-docker --force
+code --install-extension serayuzgur.crates --force
+code --install-extension tamasfe.even-better-toml --force
+code --install-extension GitHub.copilot --force
+code --install-extension ms-vscode-remote.remote-ssh --force
+code --install-extension zxh404.vscode-proto3 --force
+#code --install-extension  --force
+#code --install-extension  --force
 #code --install-extension  --force
 #code --install-extension  --force
